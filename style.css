@@ -63,3 +63,10 @@ button:active {
 #reset-btn:hover {
   background-color: #7f8c8d;
 }
+
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: #333;
+    color: #f4f4f9;
+  }
+}

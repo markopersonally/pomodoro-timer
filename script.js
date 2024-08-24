@@ -9,6 +9,21 @@ const startBtn = document.getElementById("start-btn");
 const pauseBtn = document.getElementById("pause-btn");
 const resetBtn = document.getElementById("reset-btn");
 
+const toggleButton = document.getElementById("toggleDarkMode");
+
+const updateButtonText = () => {
+  if (document.body.classList.contains("dark-mode")) {
+    toggleButton.textContent = "Light Mode";
+  } else {
+    toggleButton.textContent = "Dark Mode";
+  }
+};
+
+toggleButton.addEventListener("click", () => {
+  document.body.classList.toggle("dark-mode");
+  updateButtonText();
+});
+
 const updateDisplay = () => {
   minutesTimer.textContent = String(minutes).padStart(2, "0");
   secondsTimer.textContent = String(seconds).padStart(2, "0");
@@ -51,4 +66,5 @@ startBtn.addEventListener("click", startTimer);
 pauseBtn.addEventListener("click", pauseTimer);
 resetBtn.addEventListener("click", resetTimer);
 
+updateButtonText();
 updateDisplay();

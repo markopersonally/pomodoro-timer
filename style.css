@@ -9,6 +9,11 @@ body {
   margin: 0;
 }
 
+body.dark-mode {
+  background-color: #333;
+  color: #f4f4f9;
+}
+
 .pomodoro-container {
   background-color: #ffffff;
   padding: 40px;
@@ -17,6 +22,11 @@ body {
   text-align: center;
   max-width: 400px;
   width: 100%;
+}
+
+body.dark-mode .pomodoro-container {
+  background-color: #444;
+  color: #f4f4f9;
 }
 
 h1 {
@@ -48,6 +58,11 @@ button {
   transition: background-color 0.3s ease;
 }
 
+body.dark-mode button {
+  background-color: #555;
+  color: #f4f4f9;
+}
+
 button:hover {
   background-color: #c0392b;
 }
@@ -60,13 +75,10 @@ button:active {
   background-color: #95a5a6;
 }
 
-#reset-btn:hover {
-  background-color: #7f8c8d;
+body.dark-mode #reset-btn {
+  background-color: #777;
 }
 
-@media (prefers-color-scheme: dark) {
-  body {
-    background-color: #333;
-    color: #f4f4f9;
-  }
+#reset-btn:hover {
+  background-color: #7f8c8d;
 }

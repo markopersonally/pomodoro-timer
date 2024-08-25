@@ -1,6 +1,6 @@
 body {
   font-family: "Roboto", sans-serif;
-  background-color: #f4f4f9;
+  background-color: #ffffff;
   color: #333;
   display: flex;
   justify-content: center;
@@ -15,6 +15,7 @@ body.dark-mode {
 }
 
 .pomodoro-container {
+  position: relative;
   background-color: #f4f4f9;
   padding: 40px;
   border-radius: 15px;
@@ -27,6 +28,26 @@ body.dark-mode {
 body.dark-mode .pomodoro-container {
   background-color: #444;
   color: #f4f4f9;
+}
+
+.toggleDarkMode {
+  position: absolute;
+  top: 5%;
+  right: 10%;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+  font-size: 0.7rem;
+  font-weight: bold;
+  background-color: #333;
+  color: #f4f4f9;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+body.dark-mode .toggleDarkMode {
+  background-color: #f4f4f9;
+  color: #333;
 }
 
 .title {

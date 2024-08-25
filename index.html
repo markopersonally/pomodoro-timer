@@ -7,16 +7,16 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <button id="toggleDarkMode">Dark Mode</button>
+    <button class="d" id="toggleDarkMode">Dark Mode</button>
     <div class="pomodoro-container">
-      <h1>Pomodoro Timer</h1>
-      <div id="timer">
+      <h1 class="title">Pomodoro Timer</h1>
+      <div class="timer" id="timer">
         <span id="minutes">25</span>:<span id="seconds">00</span>
       </div>
-      <div class="buttons">
-        <button id="start-btn">Start</button>
-        <button id="pause-btn">Pause</button>
-        <button id="reset-btn">Reset</button>
+      <div class="buttons-container">
+        <button class="button-in-container start-btn" id="start-btn">Start</button>
+        <button class="button-in-container pause-btn" id="pause-btn">Pause</button>
+        <button class="button-in-container reset-btn" id="reset-btn">Reset</button>
       </div>
     </div>
     <script src="script.js"></script>
